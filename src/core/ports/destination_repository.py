@@ -1,0 +1,13 @@
+﻿# python
+from typing import Iterable, Dict, Any, Protocol
+
+class DestinationRepository(Protocol):
+    def begin_transaction(self) -> None:
+        ...
+    def commit(self) -> None:
+        ...
+    def rollback(self) -> None:
+        ...
+    def upsert_artists(self, records: Iterable[Dict[str, Any]]) -> int:
+        \"\"\"Upsert artists into destination, return number of affected rows.\"\"\"
+        ...

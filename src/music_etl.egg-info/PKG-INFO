@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: music-etl
+Version: 0.0.1
+Summary: ETL to move MusicBrainz data into MusicCollection
+Author-email: You <you@example.com>
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
